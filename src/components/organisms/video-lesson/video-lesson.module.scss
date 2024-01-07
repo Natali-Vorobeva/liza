@@ -1,0 +1,13 @@
+@use 'src/styles/variables' as vars;
+
+.video {
+  border: none;
+  width: 100%;
+  height: 456px;
+  max-width: 808px;
+  border-radius: vars.$border-radius-s;
+}
+
+.markdown {
+  margin-top: 32px;
+}

@@ -1,0 +1,22 @@
+@use 'src/styles/variables' as vars;
+
+.header {
+  box-shadow: 0 0 4px rgba(231, 232, 235, 0.6),
+    0 4px 16px rgba(231, 232, 235, 0.6);
+  padding: 24px 0;
+  font-weight: 500;
+  background-color: vars.$bg-primary;
+
+  &Container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &Links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    column-gap: 42px;
+  }
+}

@@ -1,0 +1,13 @@
+@use 'src/styles/variables' as vars;
+
+.text {
+  color: vars.$dark-primary;
+
+  &__success {
+    color: vars.$success;
+  }
+
+  &__warning {
+    color: vars.$warning;
+  }
+}

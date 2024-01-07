@@ -1,0 +1,25 @@
+@use 'src/styles/variables' as vars;
+
+.accountData {
+  max-width: 648px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  font-family: vars.$mainFont;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 32px;
+}
+
+.submitButton {
+  max-width: 246px;
+  padding: 12px 24px;
+  align-self: center;
+  border-radius: vars.$border-radius;
+  text-align: center;
+  white-space: nowrap;
+}

@@ -1,0 +1,73 @@
+@use 'src/styles/variables' as vars;
+
+.checkbox {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+  gap: 8px;
+  color: vars.$dark-primary;
+
+  &:hover {
+    color: vars.$color-hover;
+    cursor: pointer;
+  }
+}
+
+.input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.pseudo {
+  align-self: flex-start;
+  transition: color vars.$trans-300;
+
+  path {
+    opacity: 0;
+    transform-origin: center;
+    transition: transform vars.$trans-300, opacity vars.$trans-300;
+  }
+
+  /* Граница-рамка */
+  path:last-child {
+    opacity: 1;
+  }
+
+  /* Внутренняя галка/кружок */
+  path:nth-child(1) {
+    transform: scale(0);
+  }
+}
+
+.labelText {
+  transition: color vars.$trans-300;
+}
+
+/* Регулировки вкл/выкл чекбокса */
+.input:checked + .pseudo {
+  color: vars.$color-hover;
+
+  path:nth-child(1) {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.input:checked ~ .labelText {
+  color: vars.$color-hover;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}

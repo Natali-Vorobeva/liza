@@ -1,0 +1,26 @@
+@use 'src/styles/variables' as vars;
+@import 'src/styles/lesson-page';
+
+.lesson {
+  @include lesson-layout;
+}
+
+.content {
+  @include lesson-content;
+}
+
+.contents {
+  @include lesson-contents;
+}
+
+.breadcrumbs {
+  @include breadcrumbs;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+
+.error {
+  @include error;
+}

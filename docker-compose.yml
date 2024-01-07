@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  frontend_base_app:
+    container_name: lizaalert-frontend-base-container
+    image: lizaalert-frontend-base
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        PORT: 80
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    env_file:
+      - .env.production

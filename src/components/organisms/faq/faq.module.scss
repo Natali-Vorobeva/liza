@@ -1,0 +1,21 @@
+@use 'src/styles/variables' as vars;
+
+.card {
+  max-width: 872px;
+  color: vars.$dark-primary;
+}
+
+.content {
+  max-width: 808px;
+  padding: 32px 0 33px;
+  border-bottom: 1px solid vars.$borders-divider-disabled-bg;
+
+  &:last-child {
+    padding: 32px 0 0;
+    border: none;
+  }
+}
+
+.answer {
+  padding-top: 16px;
+}

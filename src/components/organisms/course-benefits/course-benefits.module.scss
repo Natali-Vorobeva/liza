@@ -1,0 +1,32 @@
+@use 'src/styles/variables' as vars;
+
+.benefits {
+  max-width: 872px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 32px;
+  font-family: vars.$mainFont;
+}
+
+.heading {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.benefitsList {
+  max-width: 808px;
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  gap: 32px vars.$grid-gap;
+  padding: 0;
+  margin: 32px 0 0;
+}
+
+.benefit {
+  max-width: 392px;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  row-gap: 16px;
+}

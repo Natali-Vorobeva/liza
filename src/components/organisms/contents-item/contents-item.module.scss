@@ -1,0 +1,76 @@
+@use 'src/styles/variables' as vars;
+
+.content {
+  display: flex;
+  gap: vars.$grid-gap;
+  padding: 32px 0;
+  font-family: vars.$mainFont;
+  border-bottom: 1px solid vars.$borders-divider-disabled-bg;
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.text {
+  width: 50%;
+  padding: 0 40px 0 0;
+  box-sizing: border-box;
+}
+
+.list {
+  width: 50%;
+  padding: 0;
+  list-style: none;
+
+  &Item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.completed {
+  color: vars.$success;
+}
+
+.accordion {
+  border-top: 1px solid vars.$borders-divider-disabled-bg;
+
+  & > button {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .list {
+    width: 100%;
+    margin: 0;
+    padding-bottom: 32px;
+  }
+
+  &:last-child {
+    .list {
+      padding-top: 32px;
+      padding-bottom: 0;
+    }
+
+    & > button {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.finished {
+  svg {
+    color: vars.$success;
+  }
+}
+
+.active {
+  color: vars.$color-hover;
+}

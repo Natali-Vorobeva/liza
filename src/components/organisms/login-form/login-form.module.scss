@@ -1,0 +1,44 @@
+@use 'src/styles/variables' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 648px;
+  margin: 0 auto;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
+.form {
+  margin-bottom: 16px;
+}
+
+.checkbox {
+  color: vars.$dark-secondary;
+}
+
+.textLink {
+  color: vars.$dark-secondary;
+}
+
+.submitButton {
+  padding: 0 24px;
+}
+
+.button {
+  width: 236px;
+  margin: 0 auto;
+}
+
+.registerLink {
+  color: vars.$dark-secondary;
+  margin: 24px auto 0;
+}

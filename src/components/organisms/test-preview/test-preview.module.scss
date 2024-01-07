@@ -1,0 +1,26 @@
+@use 'src/styles/font-variables' as vars;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.properties {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.propertiesRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  max-width: 184px;
+  margin: auto;
+}

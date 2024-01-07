@@ -1,0 +1,6 @@
+@use 'src/styles/variables' as vars;
+
+.link {
+  text-decoration: none;
+  font-family: vars.$mainFont;
+}

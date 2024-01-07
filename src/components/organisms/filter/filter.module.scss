@@ -1,0 +1,52 @@
+@use 'src/styles/variables' as vars;
+
+.filters {
+  width: 100%;
+}
+
+.card {
+  width: inherit;
+  min-height: 192px;
+  margin-bottom: 32px;
+
+  &_cropped {
+    padding-bottom: 0;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+  margin-bottom: 32px;
+}
+
+.filterAccordion > button {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-top: 1px solid vars.$borders-divider-disabled-bg;
+  transition: color vars.$trans-300;
+
+  &:hover {
+    color: vars.$color-hover;
+  }
+}
+
+.checkbox {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.selection {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  margin-right: 8px;
+  margin-bottom: 12px;
+}

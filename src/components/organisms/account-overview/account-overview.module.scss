@@ -1,0 +1,45 @@
+.accountOverview {
+  max-width: 312px;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar {
+  width: 100%;
+
+  &Container {
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
+.personalData {
+  margin: 0 0 20px;
+}
+
+.accountMeta {
+  align-self: start;
+  padding: 0;
+  list-style: none;
+  margin: 0 0 32px;
+  width: 100%;
+
+  &Item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.logout {
+  white-space: nowrap;
+}

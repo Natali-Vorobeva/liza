@@ -1,0 +1,48 @@
+@use 'src/styles/variables' as vars;
+
+.test {
+  max-width: 872px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 8px;
+}
+
+.heading {
+  max-width: 615px;
+}
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &Item {
+    padding-top: 32px;
+
+    &:not(:last-of-type) {
+      padding-bottom: 32px;
+      border-bottom: 1px solid vars.$borders-divider-disabled-bg;
+    }
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+.checkbox {
+  margin-top: 16px;
+}
+
+.button {
+  margin: 0 auto;
+}
+
+.navigation {
+  margin-top: 36px;
+}

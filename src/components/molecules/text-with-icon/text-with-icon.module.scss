@@ -1,0 +1,19 @@
+@use 'src/styles/variables' as vars;
+
+.textWithIcon {
+  display: flex;
+  align-items: center;
+  min-height: 24px;
+  width: fit-content;
+  gap: 8px;
+  color: inherit;
+  font-family: vars.$mainFont;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.icon {
+  align-self: flex-start;
+}

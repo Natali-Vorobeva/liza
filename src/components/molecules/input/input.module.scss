@@ -1,0 +1,119 @@
+@use 'src/styles/variables' as vars;
+
+@mixin placeholder {
+  color: vars.$dark-secondary;
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 584px;
+  font-family: vars.$mainFont;
+  font-weight: 400;
+  font-size: vars.$font-size-m;
+  line-height: vars.$line-height-m;
+}
+
+.label {
+  width: 100%;
+  color: vars.$dark-secondary;
+}
+
+.labelText {
+  display: block;
+  box-sizing: border-box;
+  padding: 0 16px;
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 11px 52px 11px 16px;
+  border: 1.2px solid vars.$borders-divider-disabled-bg;
+  border-radius: vars.$border-radius;
+  font-family: inherit;
+  font-weight: 400;
+  color: vars.$dark-primary;
+  font-size: vars.$font-size-m;
+  line-height: vars.$line-height-m;
+
+  &::-webkit-input-placeholder {
+    @include placeholder;
+  }
+
+  &::-moz-placeholder {
+    @include placeholder;
+  }
+
+  &::placeholder {
+    @include placeholder;
+  }
+
+  &:disabled {
+    background: vars.$bg-primary;
+    color: vars.$dark-secondary;
+    cursor: default;
+  }
+
+  &:focus {
+    outline: 1.2px solid vars.$color-primary;
+  }
+
+  &_hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    min-height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &_warned {
+    border: 1.2px solid vars.$warning;
+    background-color: vars.$warning-bg;
+  }
+
+  &_type_file {
+    cursor: pointer;
+  }
+
+  &[type='date'] {
+    cursor: text;
+
+    &::-webkit-calendar-picker-indicator {
+      display: none;
+    }
+  }
+}
+
+.icon {
+  position: absolute;
+  top: 13px;
+  right: 18px;
+  width: 24px;
+  color: vars.$dark-primary;
+  pointer-events: none;
+}
+
+.placeholder {
+  @include placeholder;
+}
+
+.error {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 32px;
+  margin-top: 3px;
+  padding-left: 16px;
+  color: vars.$warning;
+}

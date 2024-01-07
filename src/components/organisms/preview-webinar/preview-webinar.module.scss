@@ -1,0 +1,10 @@
+@use 'src/styles/variables' as vars;
+
+.accent {
+  font-weight: 700;
+}
+
+.button {
+  min-width: 184px;
+  margin: 32px auto 0;
+}

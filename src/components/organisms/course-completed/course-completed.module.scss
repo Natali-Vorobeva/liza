@@ -1,0 +1,27 @@
+@use 'src/styles/variables' as vars;
+
+.card {
+  padding-bottom: 64px;
+  color: vars.$dark-primary;
+  max-width: 872px;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: vars.$grid-gap;
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  margin-right: auto;
+  margin-bottom: 64px;
+}
+
+.accent {
+  font-weight: 700;
+}

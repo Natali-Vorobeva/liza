@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "name": "Ачивка 1",
+    "description": "Ачивка за знания",
+    "image": "../../assets/images/achievement.svg",
+    "badge_type": "manual",
+    "badge_category": "one_time",
+    "issued_for": "За страсть к знаниям",
+    "threshold_courses": null,
+    "threshold_course": null
+  }, 
+  {
+    "id": 2,
+    "name": "Ачивка 2",
+    "description": "Ачивка за мудрость",
+    "image": "../../assets/images/achievement.svg",
+    "badge_type": "manual",
+    "badge_category": "one_time",
+    "issued_for": "За мудрость и усидчивость",
+    "threshold_courses": null,
+    "threshold_course": null
+  },
+  {
+    "id": 3,
+    "name": "Ачивка 2",
+    "description": "Ачивка за мудрость",
+    "image": "../../assets/images/achievement.svg",
+    "badge_type": "manual",
+    "badge_category": "one_time",
+    "issued_for": "За мудрость и усидчивость",
+    "threshold_courses": null,
+    "threshold_course": null
+  }
+]

@@ -1,0 +1,16 @@
+@use 'src/styles/variables' as vars;
+
+.scrollContainer {
+  width: 100%;
+}
+
+.flexContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: vars.$grid-gap;
+}
+
+.button {
+  width: 360px;
+  margin: 0 auto;
+}

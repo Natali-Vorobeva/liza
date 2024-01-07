@@ -1,0 +1,33 @@
+@use 'src/styles/variables' as vars;
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 0;
+  font-family: vars.$mainFont;
+  font-size: vars.$font-size-m;
+  line-height: vars.$line-height-m;
+  font-weight: 500;
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  display: block;
+  max-width: 521px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.notActive {
+  pointer-events: none;
+}
+
+.breadcrumb:last-of-type .link {
+  color: vars.$dark-secondary;
+  pointer-events: none;
+}

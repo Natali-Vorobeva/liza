@@ -1,0 +1,53 @@
+@use 'src/styles/variables' as vars;
+
+.course {
+  &Overview {
+    max-width: 424px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    padding-bottom: 32px;
+  }
+
+  &Image {
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: vars.$border-radius;
+  }
+
+  &Meta {
+    list-style: none;
+    width: 100%;
+    padding: 0 32px;
+    box-sizing: border-box;
+    margin: 0;
+
+    &Item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &Alert {
+    width: 100%;
+    max-width: 424px;
+    box-sizing: border-box;
+    padding: 0 32px;
+  }
+
+  &Enroll {
+    width: 100%;
+    max-width: calc(100% - 64px);
+    box-sizing: border-box;
+  }
+}

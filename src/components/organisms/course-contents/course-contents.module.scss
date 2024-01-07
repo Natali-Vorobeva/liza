@@ -1,0 +1,24 @@
+@use 'src/styles/variables' as vars;
+
+.contents {
+  box-sizing: border-box;
+  min-width: 300px;
+  width: 100%;
+}
+
+.main {
+  max-width: 872px;
+}
+
+.inner {
+  max-width: 424px;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+}
+
+.heading {
+  margin-bottom: 32px;
+}
